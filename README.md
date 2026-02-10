@@ -160,7 +160,7 @@ python predict.py \
   --image path/to/image.tif \
   --checkpoint best_model.ckpt \
   --output predicted_mask.tif
-
+```
 
 ### Planned Deployment Extensions
 - 🌐 REST API using **FastAPI** for model serving  
