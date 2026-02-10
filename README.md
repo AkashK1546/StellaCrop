@@ -129,8 +129,7 @@ StellaCrop/
 ├── requirements.txt
 ├── README.md
 └── LICENSE
-
-
+```
 ---
 
 ## 📊 Evaluation Strategy
