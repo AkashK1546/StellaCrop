@@ -1,71 +1,69 @@
-# 🌱 StellaCrop: Satellite-Guided Agentic AI for Smart Farming  
- Crop Identification, Short-Term Forecasting, and AI-driven Market Advisory using IBM Granite + LangChain
-
-![StellaCrop Banner](https://img.shields.io/badge/AI-Granite%20LLM-blue?style=for-the-badge) 
-![StellaCrop Banner](https://img.shields.io/badge/Domain-AgriTech-green?style=for-the-badge) 
-![StellaCrop Banner](https://img.shields.io/badge/Status-In%20Progress-orange?style=for-the-badge)  
+# 🌱 StellaCrop  
+**Satellite-Based Crop Segmentation and AI-Assisted Agricultural Decision Support**
 
 ---
 
-## 🚀 Overview  
-**StellaCrop** is an **AI-powered, satellite-guided decision support system** that combines **real-time crop identification**, **short-term yield forecasting**, and an **Agentic AI market advisory assistant** into one unified platform.  
+## 🚀 Project Overview
 
-🌍 Designed for **farmers, cooperatives, and policymakers**, StellaCrop uses **IBM Granite LLM + LangChain** to bridge the gap between **ground-level farming data** and **market intelligence**.  
+**StellaCrop** is an end-to-end **satellite imagery–driven agricultural intelligence system** designed to identify crop types at the field level using **multi-spectral satellite data** and **deep learning–based semantic segmentation**.
 
----
-
-## 🎯 Hackathon Tracks Addressed  
-✔️ **Crop Identification** – Automated NDVI + Sentinel-2 based classification  
-✔️ **Short-Term Forecasting** – 10–14 day yield predictions with deep learning  
-✔️ **Agentic AI Applications** – Granite LLM + LangChain for adaptive advisory  
+The project was initiated as part of the **IISc–IBM India AI Impact Hackathon**, where the author participated **as a solo contributor**. After the hackathon concluded, the project was restructured and extended into a **fully functional, reproducible, and implementation-ready machine learning system**, independent of competition submission or leaderboard constraints.
 
 ---
 
-## 🛠 Tech Stack  
-- 🛰️ **Data Sources**: Sentinel-2 Satellite (NDVI, EVI), OpenWeather API  
-- 🤖 **AI Models**: IBM Granite LLM, PyTorch/TensorFlow forecasting models  
-- 🧠 **Frameworks**: LangChain for multi-agent reasoning  
-- ⚡ **Deployment**: FastAPI backend + Streamlit dashboard  
+## 🎯 Problem Statement
+
+Accurate and timely identification of crop types is critical for:
+- Agricultural planning and monitoring  
+- Yield estimation and food security  
+- Market supply analysis  
+- Policy formulation and subsidy allocation  
+
+Traditional approaches rely on manual surveys or coarse regional statistics.  
+**StellaCrop addresses this gap** by leveraging **multi-spectral satellite imagery** and **deep learning–based semantic segmentation** to perform **pixel-level crop classification** at scale.
 
 ---
 
-## 📂 Repository Structure 
-```
-StellaCrop/
-│── proposal/ # Proposal & documentation
-│ └── StellaCrop_Proposal.pdf
-│── src/
-│ ├── crop_identification/ # Satellite-based crop classification
-│ ├── yield_forecasting/ # Short-term prediction models
-│ ├── agentic_ai/ # Granite + LangChain advisory system
-│── notebooks/ # Jupyter/Colab experiments
-│── data/ # Sample datasets / links
-│── requirements.txt # Dependencies
-│── LICENSE
-│── README.md
-```
----
+## 🧠 Core Objectives
 
-## 📊 Expected Impact  
-- 🌱 **Empower smallholder farmers** with accessible crop & market intelligence  
-- 📈 **Reduce yield uncertainty** by providing 2-week advance forecasting  
-- 🛒 **Ensure fair pricing** with AI-driven advisory on market trends  
-- 🌍 **Scalable & replicable** across India with minimal retraining  
+- 🌾 Multi-class crop segmentation using satellite imagery  
+- 🛰️ Effective utilization of **12-band multi-spectral data**  
+- 📊 Robust evaluation using IoU, Dice score, and qualitative visualization  
+- 🔁 Modular and reusable training & inference pipeline  
+- 🚀 Deployment-ready inference workflow  
 
 ---
 
-## 🚧 Current Status  
-- ✅ Proposal completed  
-- 🚀 Repository initialized  
-- 🔜 Next: Model prototyping & API integration  
+## 📦 Dataset
+
+### Data Source
+
+The dataset used in this project was provided as part of the  
+**IISc–IBM India AI Impact Hackathon (Track 1: Agriculture & Land Impact)**.
+
+- Satellite imagery with **12 spectral bands**
+- Pixel-wise annotated segmentation masks
+- **6 crop classes**:
+  - Gram  
+  - Maize  
+  - Mustard  
+  - Sugarcane  
+  - Wheat  
+  - Other Crops  
+
+The dataset was originally intended for competition evaluation. In this project, it is used **strictly for research, learning, and implementation purposes** to build and validate a real-world crop segmentation pipeline.
 
 ---
 
-## 👩‍💻 Author  
-**Akash K**  
-🎓 Solo participant – *IISc–IBM India AI Impact Hackathon 2025*  
-🔗 [LinkedIn](www.linkedin.com/in/akash-k-19513b319) | [GitHub](https://github.com/AkashK1546)  
+### Dataset Structure
 
----
-
-
+```text
+data/
+├── train/
+│   ├── inputs/
+│   └── labels/
+├── val/
+│   ├── inputs/
+│   └── labels/
+└── test/
+    └── inputs/
