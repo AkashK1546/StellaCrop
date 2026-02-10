@@ -67,8 +67,7 @@ data/
 │   └── labels/
 └── test/
     └── inputs/
----
-
+```
 - Training and validation sets contain paired images and segmentation masks  
 - Test set contains unseen images used for inference and qualitative analysis  
 
