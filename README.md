@@ -1,7 +1,6 @@
 # 🌱 StellaCrop  
 **Satellite-Based Crop Segmentation and AI-Assisted Agricultural Decision Support**
 
----
 
 ## 🚀 Project Overview
 
@@ -9,7 +8,6 @@
 
 The project was initiated as part of the **IISc–IBM India AI Impact Hackathon**, where the author participated **as a solo contributor**. After the hackathon concluded, the project was restructured and extended into a **fully functional, reproducible, and implementation-ready machine learning system**, independent of competition submission or leaderboard constraints.
 
----
 
 ## 🎯 Problem Statement
 
@@ -22,7 +20,6 @@ Accurate and timely identification of crop types is critical for:
 Traditional approaches rely on manual surveys or coarse regional statistics.  
 **StellaCrop addresses this gap** by leveraging **multi-spectral satellite imagery** and **deep learning–based semantic segmentation** to perform **pixel-level crop classification** at scale.
 
----
 
 ## 🧠 Core Objectives
 
@@ -32,7 +29,6 @@ Traditional approaches rely on manual surveys or coarse regional statistics.
 - 🔁 Modular and reusable training & inference pipeline  
 - 🚀 Deployment-ready inference workflow  
 
----
 
 ## 📦 Dataset
 
@@ -53,7 +49,6 @@ The dataset used in this project was provided as part of the
 
 The dataset was originally intended for competition evaluation. In this project, it is used **strictly for research, learning, and implementation purposes** to build and validate a real-world crop segmentation pipeline.
 
----
 
 ### Dataset Structure
 
